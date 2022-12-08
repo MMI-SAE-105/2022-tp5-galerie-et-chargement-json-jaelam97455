@@ -19,7 +19,7 @@
     /* Use a grid for easy centering */
     /* Center vertically and horizontally */
         position:fixed;
-        max-width; 
+        max-width:100%; 
         max-height: max-content;
         left: 0%;
         right: 0%;
