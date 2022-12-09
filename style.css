@@ -25,7 +25,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-       background-color: rgba(0, 0, 0, 0,9 );
+       background-color: rgba(0, 0, 0, 0.9 );
        cursor: pointer;
        display: grid;
        place-content: center;
@@ -33,7 +33,7 @@
 
     .overlay::after {
       content:'X';
-      text-decoration-color: #fff;
+      color: #fff;
       background-color: black;
       font-family: sans-serif;
       text-align: center;
@@ -45,6 +45,7 @@
       width: 2rem;
       height: 2rem;
       border-color: solid white 2px;
+      border-radius: 50%;
     }
 
     .overlay>figure {
