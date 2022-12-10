@@ -14,34 +14,33 @@
 <body>
     <h1> Json</h1>
     <ul x-data="{
-    tableau =[
-    {
-        nom: 'Jean'
-        pzrojet: 'Alpine.js'
+    tableau: [
+         {
+        nom: 'Jean',
+        projet: 'Alpine.js',
         url:'https://alpinejs.dev/'
-    },
-    {
-    nom:'Maxime'
-    projet: 'Tailwind CSS'
-    url: 'https://tailwindcss.com/'
+        },
+        {
+        nom:'Maxime',
+        projet: 'Tailwind CSS',
+        url: 'https://tailwindcss.com/'
     
-    },
-    {
-    nom: 'Adam'
-    projet:'Laravel'
-    url: 'https://laravel.com/''
+        },
+        {
+         nom: 'Adam',
+         projet:'Laravel',
+         url: 'https://laravel.com/''
 
-    },
+        },
     ],
    }">
-  </ul>
-
     <template x-for="obj in tableau">
+        <li> 
         <span x-text="obj.nom">nom </span>
         <span x-text="obj.projet">projet</span>
         <span x-text="obj.url">url</span>
+    </li>
     </template>
-
  </ul>     
 </body>
 </html>
