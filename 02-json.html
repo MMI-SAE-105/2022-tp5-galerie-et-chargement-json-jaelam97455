@@ -42,5 +42,18 @@
     </li>
     </template>
  </ul>     
+ <ul x-data="{
+    async tableauJSON (){
+       const resp = await fetch ('main.json');
+       return await resp.json():
+    },
+    }">
+    <li> Tableau JSON </li>
+    <li> 
+        <span x-text="obj.nom">nom </span>
+        <span x-text="obj.projet">projet</span>
+        <span x-text="obj.url">url</span>
+    </li>
+ </ul>
 </body>
 </html>
